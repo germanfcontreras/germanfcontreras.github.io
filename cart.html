@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Carrot</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!--  Carga la biblioteca jQuery desde un CDN (Content Delivery Network). 
+         jQuery facilita la manipulación del DOM y la gestión de eventos. -->
+         
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <nav class="navbar">
+      <div class="name">
+         <a href="home.html"font-family: algerian">Tienda Abarrotes</a>
+         <!-- Nombre -->
+      </div>
+      <ul>	
+         <li>
+            <a href="home.html">Inicio</a>
+         </li>
+	     <li>
+            <a href="#">Compra</a>
+            <ul>
+               <li>
+                  <a href="home.html">Vegetales</a>
+               </li>
+		       <li>
+                  <a href="pulses.html">Legumbres</a>
+               </li>
+		    </ul>
+         </li>
+	     <li>
+            <a href="about.html">Qui&eacute;nes Somos</a>
+         </li>
+	     <li>
+            <a href="Includes/contact.php">Cont&aacute;ctanos</a>
+         </li>
+	     <li>
+            <a href="cart.html">Carro<span></span></a>
+          
+            <!-- Un enlace al carrito de compras, con un <span> vacío que puede usarse 
+                 para mostrar el número de artículos en el carrito. -->
+         </li>
+      </ul>
+   </nav>
+ 
+   <div style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(images/bg_2.jpg);width: 100%;
+	height: 90vh; background-size: 100%;background-repeat: no-repeat;">
+
+   <h2
+      style="position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);font-size: 7vw;background-size: 100%;text-align: center;margin: 0;padding: 0; ">
+      Mi carro</h2>
+   </div>
+   
+   <section class="cart">
+      <table class="table" id="cart-table" style="background-color:#5F0">
+         <thead>
+            <tr>
+                <th style="padding-right: 140px; padding-left: 26em; padding-top: 25px;">Producto</th>
+                <th style="padding-right: 130px;padding-top: 25px;">Cantidad</th>
+                <th style="padding-right: 60px;padding-top: 25px;">Total</th> 
+            </tr>
+         </thead>
+         <tbody>
+         </tbody>
+         <tfoot>
+            <tr>
+               <td style="padding-right: 75px;padding-top: 25px;" colspan="2"><strong>Total de todos los productos</strong></td>
+               <td id="cart-total">$0</td>
+            </tr>
+         </tfoot>
+      </table>
+      <div class="product"> </div>
+   </section>
+  
+  <div id="cart-total"></div>
+  
+  <p id="contador">Veces presionado: 0</p>
+  <script src="main.js"></script>
+  <footer>
+      <p style="padding-top: 10px;">Dise&ntilde;ado y mantenido por <b style=" color: #000;">
+         JAMES LEANDRO LOZADA ROMERO & GERMAN FLECHAS CONTRERAS</b>
+      </p>
+   </footer>
+
+</body>
+</html>

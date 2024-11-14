@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Abarrotes</title>
+    <link rel="stylesheet" type="text/css" href="css/PaginaInicio.css"/>
+</head>
+<body>
+	<div class="login-container">
+           <span class="lock-icon">&#128274;</span> <!-- Icono de candado --> 
+           <h2>Iniciar Sesión</h2>
+           <form method="POST" action="Includes/login.php">
+               <input type="text" name="username" placeholder="Nombre de usuario" required>
+               <input type="password" name="password" placeholder="Contraseña" required>
+               <button type="submit">Iniciar Sesión</button>
+           </form>    
+
+           <!-- Enlace para registrar un nuevo usuario -->
+           <p>¿No tienes cuenta? <a href="CreateUser">Crea una aquí</a></p>
+           
+           <!-- Enlace para recuperar la contraseña -->
+           <p><a href="/Includes/recuperar_contrasena.php">¿Olvidaste tu contraseña?</a></p>
+    </div>  
+    
+</body>
+</html>
+
+

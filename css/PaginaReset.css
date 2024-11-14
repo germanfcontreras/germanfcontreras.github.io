@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable,form, fieldset, blockquote
+   {
+	padding:0;
+	margin:0;
+	font-size: 100%;
+	font-weight: normal;
+   }
+   
+table 
+   {
+	border-collapse: collapse; border-spacing; 0;
+   }
+   
+td, th, caption 
+   {
+	font-weight: normal; text-align: left;
+   }
+   
+img, fieldset 
+   {
+	border: 0;
+   }
+   
+ol
+   {
+	padding-left: 1.4em; list-style: decimal;
+   }
+   
+ul
+   {
+	padding-left: 1.4em; list-style: square;
+   }
+   
+q:before, q:after
+   {
+	content:'';
+   }
+   
+   /*Fin del reset*/
+
+body
+   {
+    font-size:62.5%;
+   }
+
+@font-face
+		   {
+			font-family:'MiPropiaFuente';
+			src:url(Silent.ttf);
+		   }
+		   		   
+h1
+   {
+	font:'MiPropiaFuente';/*Llamado a la fuente que deseo usar*/
+	font-size:25px;/*Tamaño de la letra*/
+	background:-webkit-linear-gradient(top, #00F, #09F);
+	width:35%; /*El titulo ocupe un 35% del tamaño total*/
+	border-radius:10px;/*Redondea los bordes del aviso*/
+	margin:15px auto;/*Margen h1, superior 15pixeles y a los lados automatica*/
+	text-align:center;/*Centra el texto*/
+	padding:15px;/*Le da 15pixeles por arrriba y por abajo al texto de margen*/
+	color:#FFF;/*Color del texto Pildoras Informaticas Galeria de imagenes*/
+	box-shadow:#00F 5px 5px 10px;/*Los 5 pixeles es lo que toma por cada lado y el 10 es el difuminado de la caja*/
+	text-shadow:#FFF 2px 2px 5px;/*Es el difuminado de cada letra*/	
+   }
+   
+h2
+   {
+	font:bold 1.7em Verdana, Geneva, sans-serif;
+	marging:0;
+	padding:5px 0 5px 0px;
+	color:#000;
+   }
+   
+section
+   {
+	width:91%;/*Ocupa el 91% de la pagina*/
+	border-top:1px dashed #999;/*Es Una linea borde*/
+	margin:15px auto;/*Margen de 15px Arriba y abajo , Centro automatico*/
+   }
+   
+figure
+   {
+	float:left;
+   }
+   
+figure img
+   {
+	padding:4px;
+	background:#666;
+	border-radius:20px;
+	-webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+	box-shadow:#999 5px 5px 10px;/*Sambra de la imagem*/
+   }
+
+/*Seudo clase*/   
+figure img:hover
+   {
+	-webkit-transform:scale(1.2);
+   }
+   
+figcaption
+   {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.9em;
+	test-align:center;
+	margin-top:5px;
+   }
+   
+footer
+   {
+	clear:both;
+	padding-top:2px;
+   }
+  
+footer p
+   {
+	font:1.6em Verdana, Geneva, sans-serif;
+    color:#666;
+	margin:10px 8px;
+   }

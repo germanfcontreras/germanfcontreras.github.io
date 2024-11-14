@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" type="text/css" href="css/PaginaInicio.css"/>
+    <script>
+        // Validar que las contraseñas coincidan antes de enviar el formulario
+        function validarFormulario() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            
+            if (password !== confirmPassword) {
+                alert("Las contraseñas no coinciden.");
+                return false; // Evita que se envíe el formulario
+            }
+            return true; // Si las contraseñas coinciden, permite el envío del formulario
+        }
+    </script>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Registro de Cliente</h2>
+        <form method="POST" action="Includes/registrar_cliente.php" onsubmit="return validarFormulario()">
+            <!-- Email -->
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+
+            <!-- Teléfono -->
+            <input type="tel" name="telefono" placeholder="Teléfono" pattern="[0-9]{10}" title="Debe contener 10 dígitos" required>
+
+            <!-- Dirección -->
+            <input type="text" name="direccion" placeholder="Dirección" required>
+
+            <!-- Contraseña -->
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+
+            <!-- Confirmar Contraseña -->
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar Contraseña" required>
+
+            <!-- Botón de registro -->
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vege-store</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <nav class="navbar">
+      <div class="name">
+         <a href="home.html" style="font-family: algerian">Tienda Abarrotes</a>
+         <!-- Nombre -->
+      </div>
+      <ul>	
+         <li>
+            <a href="home.html">Inicio</a>
+         </li>
+	     <li>
+            <a href="#">Compra</a>
+            <ul>
+               <li>
+                  <a href="home.html">Vegetales</a>
+               </li>
+		       <li>
+                  <a href="pulses.html">Legumbres</a>
+               </li>
+		    </ul>
+         </li>
+	     <li>
+            <a href="about.html">Qui&eacute;nes Somos</a>
+         </li>
+	     <li>
+            <a href="Includes/contact.php">Cont&aacute;ctanos</a>
+         </li>
+	     <li>
+            <a href="cart.html">Carro<span id="contador"> 0  </span></a>
+         </li>
+      </ul>
+   </nav>
+
+   <div style="background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.5)) ,url(images/back2.jpg);width: 100%; height: 90vh; background-size: 100%;background-repeat: no-repeat;">
+
+
+<h2 style="position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);font-size: 7vw;background-size: 100%;text-align: center;margin: 0;padding: 0;">Nuestras legumbres son de buena calidad</h2>
+</div>
+
+  <section>
+     <div class="container">
+        <div class="row">
+  		   <div class="column">
+  		      <div>	
+  			     <img class="img" src="images/deliv.png">
+  			  </div>
+                <p style="color: black;text-align: center; font-size: 20px;font-weight:bold;" >
+                   ENTREGA GRATIS
+                </p>
+  				<p style="color: gray; text-align: center;font-size: 15px; margin-top:5px; ">
+                   ENV&Iacute;O GRATIS EN PEDIDO SUPERIOR A $10.000
+                </p>
+  		   </div>
+  		   <div class="column">
+  		      <div>
+  			     <img class="im" width="150px" height="150px" src="images/qual.png">
+  			  </div>
+  			     <p style="color: black;text-align: center; font-size: 20px;font-weight:bold;">
+                    SOPORTE DE CALIDAD
+                 </p>
+  				 <p style="color: gray; text-align: center;font-size: 15px; margin-top:5px; ">
+                    PRODUCTOS DE CALIDAD
+                 </p>
+  		   </div>
+  		   <div class="column">
+  		      <div>
+  			     <img class="img" src="images/support.png">
+  			  </div>
+  			  <p style="color: black;text-align: center; font-size: 20px;font-weight:bold;">
+                 APOYO
+              </p>
+  			  <p style="color: gray; text-align: center;font-size: 15px; margin-top:5px; ">
+                 24/7 SUPPORT
+              </p>
+  			</div>
+  		</div>
+     </div>
+  </section>
+
+  <section style="margin: 0; padding: 0;">
+     <div class="container">
+  	    <div class="row" style="padding:0; margin: 0;">
+  	       <div style="padding: 2px;margin-top: 2px;" class="column">
+  	          <img  style="padding: 0;" width="360px" height="270px" src="images/back1.jpg">
+  		   </div>
+  		   <div style="padding: 2px;margin-top: 2px;" class="column">
+  		      <i>
+                 <h1 style="color: #33b5e5; text-align: center; margin-top:0;padding-top: 0; margin-right: 145px;margin-left: 145px; ">Vegetales</h1>
+              </i>
+  			  <p style="color: green; text-align: center; ">Proteger la salud de cada hogar</p>
+  		   </div>
+  		   <div style="padding: 2px;margin-top: 2px;" class="column">
+  		      <img  style="padding: 0;" width="360px" height="270px" src="images/back3.jpg">
+  		   </div>
+  	    </div>
+     </div>
+  	
+  	 <div class="container">
+  	    <div class="row" style="padding:0; margin: 0;">
+  		   <div style="padding: 2px;margin-top: 2px;" class="column">
+  		      <img  style="padding: 0;" width="360px" height="270px" src="images/p1.jpg">
+  		   </div>
+  		   <div style="padding: 2px;margin-top: 2px;" class="column">
+  		      <img  style="padding: 0;" width="360px" height="270px" src="images/image_2.jpg">
+  		   </div>
+  		   <div style="padding: 2px;margin-top: 2px;" class="column">
+  		      <img  style="padding: 0;" width="360px" height="270px" src="images/p2.jpg">
+  		   </div>
+  	    </div>
+     </div>
+  </section>
+
+  <section class="products">
+     <div class="container">
+  	    <div class="row">
+  		   <i>
+              <h2 style="color: #33b5e5; text-align: center; margin-top:0;padding-top: 0; margin-right: 118px;margin-left: 118px; ">Productos Destacados</h2></i>
+  		      <h1>Nuestros productos</h1>
+  		   <p style="color: gray; text-align: center;">Productos m&aacute;s vendidos</p>
+  	    </div>
+     </div>
+
+     <div>
+  	    <div  class="container">
+  		   <div class="row">
+  		      <div class="column">
+  			     <img src="images/black urad dal.jpg">
+  				 <h2>FRIJOL NEGRO</h2>
+				 <p>$3.000/kg</p>
+				 <button type="button" class="btn" onclick="addToCart('FRIJOL NEGRO', 3000)" style="background-color:greenyellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
+				 <b style="color: red ;">AGEGAR AL CARRO</b>
+			     </button> 
+              </div>
+              
+              <div class="column">
+  			     <img src="images/masoor.jpg">
+  				 <h2>LENTEJA ROJA</h2>
+				 <p>$4.500/kg</p>
+				 <button type="button" class="btn" onclick="addToCart('LENTEJA ROJA', 4500)" style="background-color:greenyellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
+				 <b style="color: red ;">AGEGAR AL CARRO</b>
+				  </button> 
+              </div>
+              
+  			  <div class="column">
+  			     <img src="images/moong.jpg">
+  				 <h2>FRIJOL MONGO</h2>
+				 <p>$7.000/kg</p>
+				 <button type="button" class="btn" onclick="addToCart('FRIJOL MONGO', 7000)" style="background-color:greenyellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
+				 <b style="color: red ;">AGEGAR AL CARRO</b>
+				 </button> 
+  			  </div>
+  		   </div>
+  	    </div>
+    
+        <div class="container">
+  		   <div class="row">
+  		      <div class="column">
+  			     <img src="images/tur dal.jpg">
+  				 <h2>LENTEJA AMARILLA</h2>
+				 <p>$2.500/kg</p>
+				 <button type="button" class="btn" onclick="addToCart('LENTEJA AMARILLA', 2500)" style="background-color:greenyellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
+				 <b style="color: red ;">AGEGAR AL CARRO</b>
+				 </button> 
+              </div>
+              
+  			  <div class="column">
+  			     <img src="images/urad dal.jpg">
+  				 <h2>LENTEJA</h2>
+				 <p>$3.000/kg</p>
+				 <button type="button" class="btn" onclick="addToCart('LENTEJA', 3000)" style="background-color:greenyellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
+			     <b style="color: red ;">AGEGAR AL CARRO</b>
+			     </button> 
+              </div>
+              
+  			  <div class="column">
+  			     <img src="images/category-4.jpg">
+  				 <h2>FRUTAS SECAS</h2>
+				 <p>TODAS - $3.000/kg</p>
+				 <button type="button" class="btn" onclick="addToCart('FRUTAS SECAS', 3000)" style="background-color:greenyellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
+				 <b style="color: red ;">AGEGAR AL CARRO</b>
+				 </button> 
+              </div>
+  		   </div>
+  	    </div>
+     </div>
+ <p id="contador">Veces presionado: 0</p>
+</section>
+
+   <section class="discount" style="background-image: url(images/bg_3.jpg); ">
+      <i>
+         <h1 style="color: green; font-size: 30px;">
+            El mejor precio para ti
+         </h1>
+      </i>
+	     <h1 style="padding-top: 120px ; font-size: 60px;">
+            Oferta del d&iacute;a
+         </h1>
+	  <i>
+         <h1 style="padding-top: 240px;font-size: 30px; color: green; ">
+            Espinaca
+         </h1>
+      </i>
+      <i>
+         <h1 style="padding-top: 120px ; font-size: 50px; padding-left: 850px">
+            $1.000/kg 
+         </h1></i>
+   </section>
+
+<footer>
+<p style="padding-top: 10px;">Dise&ntilde;ado y mantenido por <b style=" color: #000;">JAMES LEANDRO LOZADA ROMERO & GERMAN FLECHAS CONTRERAS</b>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
